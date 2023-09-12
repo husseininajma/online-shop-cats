@@ -1,0 +1,13 @@
+<app-profile-row [canFollow] = "false"></app-profile-row>
+
+<div class = "margin-bottom-16">
+    <b>Freundenvorschläge</b>
+</div>
+<div  class = "margin-bottom-16" >
+    <app-profile-row 
+        *ngFor = "let i of [0, 1, 2]" 
+        [names] = "names[i]"
+        [descriptions] = "texts[i]"
+        [images] = "images[i]"
+    ></app-profile-row> 
+</div>
